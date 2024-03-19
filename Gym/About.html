@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+       
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white; 
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            line-height: 1.6;
+        }
+
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .dumbbell {
+            position: fixed;
+            left: 100px; 
+            top: 50%;
+            transform: translateY(-50%); 
+            animation: liftDumbbell 5s infinite;
+        }
+
+        .muscular-hand {
+            position: fixed;
+            right: 100px; 
+            top: 50%;
+            transform: translateY(-50%); 
+            animation: liftDumbbell 5s infinite;
+        }
+
+      
+        @keyframes liftDumbbell {
+            0%, 100% {
+                transform: translateY(0); 
+            }
+            50% {
+                transform: translateY(-20px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <a href="Index.html">Body Mania</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h2>Our Story</h2>
+<p>Welcome to our gym! We are dedicated to helping you achieve your fitness goals and live a healthier life. Our journey began several years ago with a vision to create a fitness community where everyone feels welcomed and motivated.</p>
+
+<h2>Our Mission</h2>
+<p>Our mission is to provide a supportive and inspiring environment for individuals of all fitness levels. Whether you're a beginner or an experienced athlete, we offer a wide range of fitness programs and state-of-the-art equipment to meet your needs.</p>
+
+<h2>Our Self-Check-In System</h2>
+<p>One of the ways we strive to make your gym experience seamless and convenient is through our advanced self-check-in system. We understand that your time is valuable, and waiting in lines is the last thing you want to do before a workout.</p>
+
+<p>With our state-of-the-art self-check-in system, you can simply use your membership card or our dedicated smartphone app to access the gym. No more waiting in long queues or dealing with paperwork at the front desk. Our system ensures a quick and hassle-free check-in process, allowing you to focus on what matters most—your fitness journey.</p>
+
+<p>But that's not all. Our self-check-in system also provides you with valuable insights into your fitness routine. You can track your attendance, view upcoming classes, and even receive personalized workout recommendations, all at your fingertips.</p>
+
+<p>We believe that the self-check-in system is a testament to our commitment to innovation and member satisfaction. It's just one of the many ways we're working to enhance your gym experience.</p>
+
+<h2>Join Us Today</h2>
+<p>We invite you to become a part of our fitness family and embark on a journey to a healthier you. Whether you're interested in cardio, strength training, group classes, or personal training, we have something for everyone.</p>
+
+<p>Thank you for considering us as your fitness partner. We look forward to helping you reach your fitness goals!</p>
+
+<a href="terms.html">Terms and Conditions</a>
+
+<img class="dumbbell" src="images/dumbbell.jpg" alt="Dumbbell Image">
+<img class="muscular-hand" src="images/muscular-hand.png" alt="Muscular Hand Image" >
+
+
+
+        <h2>Watch Our Video</h2>
+        <div class="video-container">
+            
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/s8hWQwFwayo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <footer>
+            &copy; Body Mania - All rights reserved.
+        </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Motivational Speeches</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar" id="myNavbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="speeches.html">Speeches</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  
+  <div class="titleBlock">
+    <h1 class="title">
+      <span class="Contact">Contact</span>
+    </h1>
+    <p class="header-text">Have questions or suggestions? Get in touch with us.</p>
+  </div>
+
+  <div class="main-content">
+<div class="logo-container">
+    <img src="Logo.png" alt="Logo" class="logo-image">
+  </div>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+ <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+    
+    <label for="fax">Fax Number:</label>
+    <input type="tel" id="fax" name="fax" placeholder="555-123-4567">
+        
+        <button type="submit">Send Message</button>
+      </form>
+     <div class="contact-info">
+    <h2>Contact Information</h2>
+    <p>Email: info@motivationalspeeches.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Fax: 555-123-4567</p>
+  </div>
+</div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Motivational Speeches. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

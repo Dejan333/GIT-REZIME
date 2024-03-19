@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Site Title</title>
+    <style>
+        body, html {
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+            max-height: 100%;
+            overflow-y: auto; 
+        }
+        
+        header {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 101%;
+    margin-top: 15px;
+    margin-left: 8px;
+    height: 22%; 
+    background: url("banner5.png") no-repeat;
+    background-size: 100% 101%;
+    background-position: relative;
+    
+}
+
+        nav {
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+          justify-content:space-between;
+          
+        }
+        
+
+        .navigation {
+            padding: 25px;
+            
+        }
+        .backlink{
+            justify-content: flex-start;
+            z-index: 999;
+        }
+
+        .content {
+            padding: 20px;
+            display: flex; 
+            
+        }
+    h2 {
+        padding-top: 50px;
+    color: white;
+    font-family: 'Elf', sans-serif;
+    position: relative;
+    transition:color 1.5s ease-out;
+}
+
+
+h2::before {
+content:'Mordor';
+    position: absolute;
+    white-space: pre-line; 
+    font-family: 'Times New Roman', Times, serif;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    color: gold;
+    transition: color 1s ease-in-out; 
+}
+
+h2:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px gold);
+}
+h2:hover {
+    color: transparent;
+    transition: color 1s ease-out;
+}
+
+p:hover {
+    color: transparent;
+    transition: color 1.5s ease-in-out; 
+}
+
+p {
+    color: white;
+    font-family: 'Elf', sans-serif;
+    font-size: 17px;
+    position: relative; 
+    transition: color 1.5s ease-in-out; 
+    padding-right: 300px;
+}
+
+p::before {
+    content:"In the shadowy annals of Middle-earth, where darkness and despair intertwine, lies the ominous history of Mordor.\A A land veiled in perpetual gloom, Mordor's tale unfolds like a sinister tapestry woven with threads of malice and ancient malevolence.\A\AIn the forgotten epochs of the First Age, Mordor emerged from the tumultuous chaos of the world.\A Nestled in the southeastern realms, this desolate land was forged by the dark hand of Morgoth, the malevolent deity whose malevolence knew no bounds.\A From the fiery depths of Mount Doom, the very heart of Mordor, the ominous power of the One Ring was conceived, its malevolent energies shaping the destiny of the accursed land.\A\A At the heart of Mordor rose the sinister Tower of Barad-dûr, a looming citadel that pierced the skies like a blackened dagger.\A Constructed by the enslaved hands of Sauron's minions, the tower stood as an unholy beacon, radiating the dark energies of the Dark Lord's dominion.\A From its ominous heights, Sauron surveyed Mordor, his eye ever-watchful, casting a baleful gaze upon the desolation below.\A\AMordor's history is etched in the suffering of those who toiled beneath the shadow of Barad-dûr.\A Orcs, trolls, and wretched creatures of darkness, forged in the crucible of malice, served their dark master in abject servitude.\A The Ringwraiths, once noble kings corrupted by the allure of the Rings of Power, became the spectral heralds of Mordor, spreading fear and despair throughout the land.\A\AMordor played a pivotal role in the cataclysmic War of the Ring. \A As the Free Peoples of Middle-earth rallied against the encroaching darkness, the armies of Mordor marched forth, led by the Dark Lord's fearsome lieutenants.\A  The battles raged across the desolate plains, and the ominous eye of Sauron sought to crush all resistance.\A\AIn the climactic struggle for the fate of Middle-earth, the One Ring was destroyed, shattering the foundations of Sauron's power.\A Mordor, bereft of its dark master's influence, crumbled into chaos." ;
+    white-space: pre-line; 
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    width: 0;
+    padding-left:10px;
+    font-size: 17px;
+    height: 100%;
+    overflow: hidden;
+    color: gold;
+    transition: width 1.5s ease-in-out; 
+}
+
+
+
+
+p:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px gold);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.text {
+    padding-right: 20px;
+    line-height: 1.8;
+}
+
+.additional-image2 {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 20%;
+            margin-left: 75%;
+            padding-left: 2%;
+            margin-top: 33%;
+            position: absolute;
+            mix-blend-mode:screen;
+            filter: brightness(85%);
+
+        }
+
+        .additional-image1 {
+            max-width: 420px;
+            margin-top:200px;
+            max-height: 300px;
+            border-radius: 20%;
+            margin-left: 80%;
+            padding-left: 2%;
+            position:absolute;
+            mix-blend-mode:screen;
+            
+
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="background-video">
+        <video autoplay muted loop class="fade-transition">
+            <source id="background-source" src="fire.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+ 
+    <nav>
+        <ul class="backlink">
+            <a href="index.html"class="background-button">Back</a>
+            <a href="index.html"class="background-button2">Back</a>
+        </ul>
+       
+    </nav>
+ 
+    <div class="container">
+        <div class="content">
+        <div id="men-content" class="text"> 
+            <h2>Mordor</h2>
+            <header>
+            </header>
+            <p>
+
+                In the shadowy annals of Middle-earth, where darkness and despair intertwine, lies the ominous history of Mordor. A land veiled in perpetual gloom, Mordor's tale unfolds like a sinister tapestry woven with threads of malice and ancient malevolence.
+                          <br>
+                          <br>
+                          In the forgotten epochs of the First Age, Mordor emerged from the tumultuous chaos of the world. Nestled in the southeastern realms, this desolate land was forged by the dark hand of Morgoth, the malevolent deity whose malevolence knew no bounds. From the fiery depths of Mount Doom, the very heart of Mordor, the ominous power of the One Ring was conceived, its malevolent energies shaping the destiny of the accursed land.
+                          <br>
+                          <br>
+                          
+                          At the heart of Mordor rose the sinister Tower of Barad-dûr, a looming citadel that pierced the skies like a blackened dagger. Constructed by the enslaved hands of Sauron's minions, the tower stood as an unholy beacon, radiating the dark energies of the Dark Lord's dominion. From its ominous heights, Sauron surveyed Mordor, his eye ever-watchful, casting a baleful gaze upon the desolation below.               
+                           <br>
+                           <br>
+                           Mordor's history is etched in the suffering of those who toiled beneath the shadow of Barad-dûr. Orcs, trolls, and wretched creatures of darkness, forged in the crucible of malice, served their dark master in abject servitude. The Ringwraiths, once noble kings corrupted by the allure of the Rings of Power, became the spectral heralds of Mordor, spreading fear and despair throughout the land. 
+                                          <br>
+                                          <br>
+                                          Mordor played a pivotal role in the cataclysmic War of the Ring. As the Free Peoples of Middle-earth rallied against the encroaching darkness, the armies of Mordor marched forth, led by the Dark Lord's fearsome lieutenants. The battles raged across the desolate plains, and the ominous eye of Sauron sought to crush all resistance.             
+                                             <br>
+                                             <br>
+                                          In the climactic struggle for the fate of Middle-earth, the One Ring was destroyed, shattering the foundations of Sauron's power. Mordor, bereft of its dark master's influence, crumbled into chaos.         
+                                             <br>
+                                             <br>
+                                             <br>
+                                             <br>
+                                             <br>
+                                             <br>       
+            </div>
+            <video autoplay loop muted class="additional-image2">
+                <source src="515.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    </div>
+    <video  autoplay loop muted class="additional-image1">
+        <source src="mordor.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+</div>
+
+    <script>
+
+</script>
+</body>
+</html>

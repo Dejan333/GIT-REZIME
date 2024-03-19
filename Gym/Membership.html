@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .container {
+            max-width: 300px;
+            margin: auto;
+            padding: 0px;
+            background-color: white; 
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            margin-top:-25px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+         p {
+            font-size: 30px;
+            margin: 0;
+        }   
+        h2,h3{
+            font-size: 20px;
+        }
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gym Membership Plans</h1>
+        <button id="back-button" onclick="goBack()">Back</button>
+    </header>
+    <main>
+        <div class="container">
+        <section class="membership-options">
+            <h2>Select a Membership Plan:</h2>
+            <div class="option">
+                <h3>Basic Plan</h3>
+                <p>Access to gym facilities for 30 sessions</p>
+                <p>Price: $30/month</p>
+                <button class="select-plan-button" onclick="selectPlan(this)">Select</button>
+            </div>
+            <div class="option">
+                <h3>Premium Plan</h3>
+                <p>Access to gym facilities for 30 sessions</p>
+                <p>Access to fitness classes and a personal trainer</p>
+                <p>Price: $50/month</p>
+                <button class="select-plan-button" onclick="selectPlan(this)">Select</button>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section class="payment-form">
+            <h2>Enter Credit Card Information:</h2>
+            <form>
+                <label for="email">Email Adress</label>
+                <input type="text"id="email"name="email"placeholder="john.johnson@gmail.com" required>
+                <br>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                <label for="card-holder">Cardholder Name:</label>
+                <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" required>
+                <label for="expiry-date"><br>Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                <label for="StateSelect">Select a State:</label>
+                <select id="stateSelect" name="state">
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                    <option value="california">California</option>
+                    <option value="colorado">Colorado</option>
+                    <option value="connecticut">Connecticut</option>
+                    <option value="delaware">Delaware</option>
+                    <option value="florida">Florida</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="idaho">Idaho</option>
+                    <option value="illinois">Illinois</option>
+                    <option value="indiana">Indiana</option>
+                    <option value="iowa">Iowa</option>
+                    <option value="kansas">Kansas</option>
+                    <option value="kentucky">Kentucky</option>
+                    <option value="louisiana">Louisiana</option>
+                    <option value="maine">Maine</option>
+                    <option value="maryland">Maryland</option>
+                    <option value="massachusetts">Massachusetts</option>
+                    <option value="michigan">Michigan</option>
+                    <option value="minnesota">Minnesota</option>
+                    <option value="mississippi">Mississippi</option>
+                    <option value="missouri">Missouri</option>
+                    <option value="montana">Montana</option>
+                    <option value="nebraska">Nebraska</option>
+                    <option value="nevada">Nevada</option>
+                    <option value="new-hampshire">New Hampshire</option>
+                    <option value="new-jersey">New Jersey</option>
+                    <option value="new-mexico">New Mexico</option>
+                    <option value="new-york">New York</option>
+                    <option value="north-carolina">North Carolina</option>
+                    <option value="north-dakota">North Dakota</option>
+                    <option value="ohio">Ohio</option>
+                    <option value="oklahoma">Oklahoma</option>
+                    <option value="oregon">Oregon</option>
+                    <option value="pennsylvania">Pennsylvania</option>
+                    <option value="rhode-island">Rhode Island</option>
+                    <option value="south-carolina">South Carolina</option>
+                    <option value="south-dakota">South Dakota</option>
+                    <option value="tennessee">Tennessee</option>
+                    <option value="texas">Texas</option>
+                    <option value="utah">Utah</option>
+                    <option value="vermont">Vermont</option>
+                    <option value="virginia">Virginia</option>
+                    <option value="washington">Washington</option>
+                    <option value="west-virginia">West Virginia</option>
+                    <option value="wisconsin">Wisconsin</option>
+                    <option value="wyoming">Wyoming</option>
+                </select>
+                
+                <button type="submit">Submit Payment</button>
+            </form>
+        </section>
+        <h1>Select a trainer</h1>
+
+<form action=""> 
+<select name="customers" onchange="showCustomer(this.value)">
+<option value="">Select a trainer:</option>
+<option value="ALFKI">Alfreds Futterkiste</option>
+<option value="NORTS ">North/South</option>
+<option value="WOLZA">Wolski Zajazd</option>
+</select>
+</form>
+<br>
+
+        <footer>
+            &copy; Body Mania - All rights reserved.
+        </footer>
+    </main>
+    <script>
+        
+            const countrySelect = document.getElementById('countrySelect');
+            const selectedCountry = document.getElementById('selectedCountry');
+    
+            countrySelect.addEventListener('change', function() {
+                selectedCountry.textContent = countrySelect.options[countrySelect.selectedIndex].text;
+            });
+    
+        function goBack() {
+            window.history.back();
+        }
+
+        function selectPlan(button) {
+            const optionElements = document.querySelectorAll('.option');
+            optionElements.forEach((element) => {
+                element.classList.remove('selected-plan');
+            });
+
+            const option = button.parentElement;
+            option.classList.add('selected-plan');
+        }
+        function showCustomer(str) {
+            var xhttp;    
+            if (str == "") {
+              document.getElementById("txtHint").innerHTML = "";
+              return;
+            }
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+              }
+            };
+            xhttp.open("GET", "getcustomer.php?q="+str, true);
+            xhttp.send();
+          }
+    </script>
+</body>
+</html>

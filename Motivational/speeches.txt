@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speeches</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="speeches.html">Speeches</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+    <div class = "titleBlock">
+      <h1 class="title">
+        <span class="Speeches">Speeches</span>
+      </h1>
+
+      <p class="header-text">
+           
+      </p>
+    </div>
+
+
+    <div class="main-content">
+<div class="logo-container">
+    <img src="Logo.png" alt="Logo" class="logo-image">
+  </div>
+</div>
+<div class="abouttext"> 
+  <h2>Our Recommended Videos</h2>
+  </div>
+<style>
+  .audio-container {
+    margin-top: 20px;
+  }
+</style>
+    <div class="yt-container">
+      <div class="video">
+        <a href="https://www.youtube.com/@motiversity" target="_blank">Motiversity YouTube Channel</a>
+      </div>
+      <div class="video">
+        <a href="https://www.youtube.com/@MotivationHubOfficial" target="_blank">MotivationHubOfficial YouTube Channel</a>
+      </div>
+      <div class="video">
+        <a href="https://www.youtube.com/@ChispaMotivation" target="_blank">ChispaMotivation YouTube Channel</a>
+      </div>
+      <div class="video">
+        <a href="https://www.youtube.com/@Motivation2Study" target="_blank">Motivation2Study YouTube Channel</a>
+      </div>
+      <div class="video">
+        <a href="https://www.youtube.com/@Yourworldwithin" target="_blank">Yourworldwithin YouTube Channel</a>
+      </div>
+    </div>
+<div class="audio-container">
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Motivational Speeches. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+
+</body>
+</html>

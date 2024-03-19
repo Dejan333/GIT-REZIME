@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Site Title</title>
+    <style>
+           @media (min-width: 768px) {
+            body {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+
+        @media (min-width: 601px) {
+            body {
+                background-color: rgb(8, 0, 0);
+                
+            }
+        }
+        body, html {
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+            max-height: 100%;
+            overflow-y: auto; 
+        }
+        
+        header {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 101%;
+    margin-top: 15px;
+    margin-left: 8px;
+    height: 22%; 
+    background: url("banner5.png") no-repeat;
+    background-size: 100% 101%;
+    background-position: relative;
+    
+}
+
+        nav {
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+          justify-content:space-between;
+          
+        }
+        
+
+        .navigation {
+            padding: 25px;
+            
+        }
+        .backlink{
+            justify-content: flex-start;
+            z-index: 999;
+        }
+
+        .content {
+            padding: 20px;
+            display: flex; 
+            
+        }
+    h2 {
+        padding-top: 50px;
+    color: white;
+    font-family: 'Elf', sans-serif;
+    position: relative;
+    transition:color 1.5s ease-out;
+}
+
+
+h2::before {
+content:'Gondor';
+    position: absolute;
+    white-space: pre-line; 
+    font-family: 'Times New Roman', Times, serif;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    color: gold;
+    transition: color 1s ease-in-out; 
+}
+
+h2:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px gold);
+}
+h2:hover {
+    color: transparent;
+    transition: color 1s ease-out;
+}
+
+p:hover {
+    color: transparent;
+    transition: color 1.5s ease-in-out; 
+}
+
+p {
+    color: white;
+    font-family: 'Elf', sans-serif;
+    position: relative;
+    transition: color 1.5s ease-in-out; 
+}
+
+p::before {
+    content: "In the annals of Middle-earth, there exists a realm of Men that gleams like a precious gem—the noble land of Gondor.\A Its story, a tapestry woven through the mists of time, reveals a land of valor and chivalry, sung by bards and whispered by firelight.\A Let us, dear travelers of tales, embark upon this journey to unravel the essence of the Gondorians.\A\AIn the mists of the Second Age, when the world was still young, the Dúnedain, a lineage of Men with the noble blood of Númenor coursing through their veins, made their voyage to Middle-earth.\A Descendants of those who had survived the cataclysmic downfall of Númenor, they established the kingdom of Gondor as a testament to their indomitable spirit.\A In an age defined by the eternal struggle between light and shadow, Gondor arose as a beacon of hope.\A\ANestled within the southwestern reaches of Middle-earth, Gondor is a realm of breathtaking beauty, guarded by nature's defenses.\A To the east flows the mighty river Anduin, while the stoic White Mountains rise as sentinels to the west.\A Amidst these natural fortifications lies the crowning jewel—Minas Tirith, the City of Kings or the White City. This seven-tiered marvel, perched like a regal crown upon a hill, stands as a testament to the grandeur of Gondor.\A\AThe Gondorians, known far and wide for their chivalry and valor, hold honor and duty close to their hearts. Their culture is steeped in the traditions of honor, history, and law. Minas Tirith, the beating heart of Gondor, thrives as a sanctuary of knowledge, with libraries and archives preserving the wisdom of ages.\A\AGondor's martial prowess is the stuff of legends. The Gondorian Knights, clad in armor gleaming like moonlight on a still lake, stand ever vigilant with swords, spears, and bows in hand. The Gondor Guards, the city's valiant protectors, shoulder the solemn responsibility of shielding their lands from the ever-present threats, including the shadowy forces of Sauron.\A\ATraditionally, Gondor was ruled by the line of kings from the House of Anárion. However, as the line of kings waned, the stewardship emerged to safeguard the kingdom's legacy. Denethor II, a stern and complex figure, exemplified the tenacity of Gondor's leaders in preserving their realm's heritage.\A\AGondor played a pivotal role in the cataclysmic War of the Ring. As a key ally of the Free Peoples of Middle-earth, their armies, led by valiant heroes such as Faramir and Boromir, marched forth to confront the encroaching darkness of Sauron.\A\AThe emblem of Gondor, the White Tree, is a symbol of enduring hope. This ancient tree, found in the heart of Minas Tirith, is depicted on Gondor's banners and the personal seals of the Stewards. It serves as a poignant reminder of the unbroken lineage that ties Gondor to its lost line of kings.\A\A After the fall of Sauron, Aragorn, a descendant of Gondor's kings, ascended to the throne, bearing the name King Elessar.\A This marked a new era for Gondor, ushering in an age of peace and prosperity under the banner of a true king.";
+    white-space: pre-line; 
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    color: gold;
+    transition: width 1.5s ease-in-out; 
+}
+
+
+
+p:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px gold);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+        .text {
+    padding-right: 20px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.gondor-image {
+    max-width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+
+.additional-image {
+    max-width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 84%;
+}
+    </style>
+</head>
+<body>
+    <div id="background-video">
+        <video autoplay muted loop class="fade-transition">
+            <source id="background-source" src="fire.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+ 
+    <nav>
+        <ul class="backlink">
+            <a href="index.html"class="background-button">Back</a>
+            <a href="index.html"class="background-button2">Back</a>
+        </ul>
+       
+    </nav>
+ 
+    <div class="container">
+        <div class="content">
+        <div id="men-content" class="text"> 
+            <h2>Gondor</h2>
+            <header>
+            </header>
+            <p>
+                In the annals of Middle-earth, there exists a realm of Men that gleams like a precious gem—the noble land of Gondor. Its story, a tapestry woven through the mists of time, reveals a land of valor and chivalry, sung by bards and whispered by firelight. Let us, dear travelers of tales, embark upon this journey to unravel the essence of the Gondorians.
+                <br>
+                <br>
+                In the mists of the Second Age, when the world was still young, the Dúnedain, a lineage of Men with the noble blood of Númenor coursing through their veins, made their voyage to Middle-earth. Descendants of those who had survived the cataclysmic downfall of Númenor, they established the kingdom of Gondor as a testament to their indomitable spirit. In an age defined by the eternal struggle between light and shadow, Gondor arose as a beacon of hope.
+                <br>
+                <br>
+                Nestled within the southwestern reaches of Middle-earth, Gondor is a realm of breathtaking beauty, guarded by nature's defenses. To the east flows the mighty river Anduin, while the stoic White Mountains rise as sentinels to the west. Amidst these natural fortifications lies the crowning jewel—Minas Tirith, the "City of Kings" or the "White City." This seven-tiered marvel, perched like a regal crown upon a hill, stands as a testament to the grandeur of Gondor.
+                <br>
+                <br>
+                The Gondorians, known far and wide for their chivalry and valor, hold honor and duty close to their hearts. Their culture is steeped in the traditions of honor, history, and law. Minas Tirith, the beating heart of Gondor, thrives as a sanctuary of knowledge, with libraries and archives preserving the wisdom of ages.
+                <br>
+                <br>
+                Gondor's martial prowess is the stuff of legends. The Gondorian Knights, clad in armor gleaming like moonlight on a still lake, stand ever vigilant with swords, spears, and bows in hand. The Gondor Guards, the city's valiant protectors, shoulder the solemn responsibility of shielding their lands from the ever-present threats, including the shadowy forces of Sauron.
+                <br>
+                <br>
+                Traditionally, Gondor was ruled by the line of kings from the House of Anárion. However, as the line of kings waned, the stewardship emerged to safeguard the kingdom's legacy. Denethor II, a stern and complex figure, exemplified the tenacity of Gondor's leaders in preserving their realm's heritage.
+                <br>
+                <br>
+                Gondor played a pivotal role in the cataclysmic War of the Ring. As a key ally of the Free Peoples of Middle-earth, their armies, led by valiant heroes such as Faramir and Boromir, marched forth to confront the encroaching darkness of Sauron.
+                <br>
+                <br>
+                The emblem of Gondor, the White Tree, is a symbol of enduring hope. This ancient tree, found in the heart of Minas Tirith, is depicted on Gondor's banners and the personal seals of the Stewards. It serves as a poignant reminder of the unbroken lineage that ties Gondor to its lost line of kings.
+                <br>
+                <br>
+                After the fall of Sauron, Aragorn, a descendant of Gondor's kings, ascended to the throne, bearing the name King Elessar. This marked a new era for Gondor, ushering in an age of peace and prosperity under the banner of a true king.
+                <br>
+                <br>
+            </div>
+        <img class="gondor-image" src="men1.png" alt="Gondor Image"> 
+    </div>
+    <img class="additional-image" src="rohan.jpeg" alt="Additional Image">
+</div>
+</div>
+
+    <script>
+
+</script>
+</body>
+</html>

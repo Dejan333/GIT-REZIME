@@ -1,0 +1,51 @@
+﻿@model IEnumerable<PrijavaIspita>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ispit.SifraIspita)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Predmet.Sifra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.Ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrojPrethodnihPolaganja)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ispit.SifraIspita)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Predmet.Sifra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.Ime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrojPrethodnihPolaganja)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

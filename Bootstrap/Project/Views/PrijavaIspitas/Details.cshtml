@@ -1,0 +1,50 @@
+﻿@model PrijavaIspita
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PrijavaIspita</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ispit.SifraIspita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ispit.SifraIspita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Predmet.Sifra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Predmet.Sifra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojPrethodnihPolaganja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojPrethodnihPolaganja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
